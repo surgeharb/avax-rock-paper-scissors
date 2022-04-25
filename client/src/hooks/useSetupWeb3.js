@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import GameItemContract from '../contracts/GameItem.json';
 import SurgeTokenContract from '../contracts/SurgeToken.json';
 import getWeb3 from '../getWeb3';
 
@@ -8,6 +9,7 @@ const useSetupWeb3 = () => {
   const [web3, setWeb3] = useState(null);
   const [accounts, setAccounts] = useState([]);
   const [networkId, setNetworkId] = useState(null);
+  const [gameItemInstance, setGameItemInstance] = useState(null);
   const [surgeTokenInstance, setSurgeTokenInstance] = useState(null);
 
   useEffect(() => {
@@ -30,6 +32,13 @@ const useSetupWeb3 = () => {
             SurgeTokenContract.networks[self.networkId].address
         )
       );
+      setGameItemInstance(
+        new self.web3.eth.Contract(
+          GameItemContract.abi,
+          GameItemContract.networks[self.networkId] &&
+            GameItemContract.networks[self.networkId].address
+        )
+      );
       setIsLoaded(true);
     };
     init();
@@ -40,6 +49,7 @@ const useSetupWeb3 = () => {
     accounts,
     networkId,
     surgeTokenInstance,
+    gameItemInstance,
     isLoaded,
   };
 };

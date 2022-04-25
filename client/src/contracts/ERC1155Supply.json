@@ -366,10 +366,10 @@
     "absolutePath": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
     "exportedSymbols": {
       "Address": [
-        1967
+        3122
       ],
       "Context": [
-        1989
+        3144
       ],
       "ERC1155": [
         1292
@@ -378,7 +378,7 @@
         1657
       ],
       "ERC165": [
-        2013
+        3445
       ],
       "IERC1155": [
         1414
@@ -390,7 +390,7 @@
         1455
       ],
       "IERC165": [
-        2025
+        3457
       ]
     },
     "id": 1658,
@@ -451,9 +451,9 @@
           1292,
           1672,
           1414,
-          2013,
-          2025,
-          1989
+          3445,
+          3457,
+          3144
         ],
         "name": "ERC1155Supply",
         "nameLocation": "525:13:6",
@@ -1981,10 +1981,10 @@
     "absolutePath": "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol",
     "exportedSymbols": {
       "Address": [
-        1967
+        3122
       ],
       "Context": [
-        1989
+        3144
       ],
       "ERC1155": [
         1292
@@ -1993,7 +1993,7 @@
         1657
       ],
       "ERC165": [
-        2013
+        3445
       ],
       "IERC1155": [
         1414
@@ -2005,7 +2005,7 @@
         1455
       ],
       "IERC165": [
-        2025
+        3457
       ]
     },
     "id": 1658,
@@ -2066,9 +2066,9 @@
           1292,
           1672,
           1414,
-          2013,
-          2025,
-          1989
+          3445,
+          3457,
+          3144
         ],
         "name": "ERC1155Supply",
         "nameLocation": "525:13:6",
@@ -3598,7 +3598,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-23T10:38:36.084Z",
+  "updatedAt": "2022-04-25T19:57:23.650Z",
   "devdoc": {
     "details": "Extension of ERC1155 that adds tracking of total supply per id. Useful for scenarios where Fungible and Non-fungible tokens have to be clearly identified. Note: While a totalSupply of 1 might mean the corresponding is an NFT, there is no guarantees that no other token with the same id are not going to be minted.",
     "kind": "dev",

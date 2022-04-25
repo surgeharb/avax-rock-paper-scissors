@@ -6,12 +6,12 @@ const App = () => {
   const [tokensCount, setTokensCount] = useState(0);
   const [userNftArray, setUserNftArray] = useState([]);
 
-  const { web3, accounts, networkId, surgeTokenInstance, isLoaded } = useSetupWeb3();
+  const { web3, accounts, networkId, gameItemInstance, isLoaded } = useSetupWeb3();
 
   const updateTokensCount = useCallback(async () => {
-    const totalTokens = await surgeTokenInstance.methods.getTokensCount().call();
+    const totalTokens = await gameItemInstance.methods.currentSupply().call();
     setTokensCount(totalTokens);
-  }, [surgeTokenInstance]);
+  }, [gameItemInstance]);
 
   const getNftUrlArray = useCallback(async () => {
     if (!tokensCount || !accounts.length) {
@@ -20,10 +20,10 @@ const App = () => {
 
     const nftArr = [];
 
-    for (let i = 0; i <= tokensCount; i++) {
-      const bal = await surgeTokenInstance.methods.balanceOf(accounts[0], i).call();
+    for (let i = 1; i <= tokensCount; i++) {
+      const bal = await gameItemInstance.methods.balanceOf(accounts[0]).call();
       if (bal > 0) {
-        const fetchedData = await surgeTokenInstance.methods.uri(i).call();
+        const fetchedData = await gameItemInstance.methods.tokenURI(i).call();
         nftArr.push({ id: i, url: fetchedData.replace('{id}', i) });
       }
     }
@@ -38,7 +38,7 @@ const App = () => {
     }));
 
     setUserNftArray(nftWithMetaDataAndId);
-  }, [accounts, surgeTokenInstance, tokensCount]);
+  }, [accounts, gameItemInstance, tokensCount]);
 
   useEffect(() => {
     if (isLoaded) {
@@ -62,7 +62,7 @@ const App = () => {
       <p>
         This is a demo of a React.js NFT viewer. It shows the necessary information to display NFTs.
       </p>
-      <p>The NFTs are managed by the "SurgeToken" smart contract.</p>
+      <p>The NFTs are managed by the "GameItem" smart contract.</p>
       <p>
         Total tokens: <code>{tokensCount}</code>
       </p>

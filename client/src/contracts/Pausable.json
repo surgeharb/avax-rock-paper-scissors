@@ -55,7 +55,7 @@
     "absolutePath": "@openzeppelin/contracts/security/Pausable.sol",
     "exportedSymbols": {
       "Context": [
-        1989
+        3144
       ],
       "Pausable": [
         196
@@ -83,7 +83,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 197,
-        "sourceUnit": 1990,
+        "sourceUnit": 3145,
         "src": "115:30:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -96,7 +96,7 @@
               "id": 109,
               "name": "Context",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1989,
+              "referencedDeclaration": 3144,
               "src": "617:7:1"
             },
             "id": 110,
@@ -116,7 +116,7 @@
         "id": 196,
         "linearizedBaseContracts": [
           196,
-          1989
+          3144
         ],
         "name": "Pausable",
         "nameLocation": "605:8:1",
@@ -754,7 +754,7 @@
                           "name": "_msgSender",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1979,
+                          "referencedDeclaration": 3134,
                           "src": "1958:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -925,7 +925,7 @@
                           "name": "_msgSender",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1979,
+                          "referencedDeclaration": 3134,
                           "src": "2207:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1044,7 +1044,7 @@
     "absolutePath": "@openzeppelin/contracts/security/Pausable.sol",
     "exportedSymbols": {
       "Context": [
-        1989
+        3144
       ],
       "Pausable": [
         196
@@ -1072,7 +1072,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 197,
-        "sourceUnit": 1990,
+        "sourceUnit": 3145,
         "src": "115:30:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1085,7 +1085,7 @@
               "id": 109,
               "name": "Context",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1989,
+              "referencedDeclaration": 3144,
               "src": "617:7:1"
             },
             "id": 110,
@@ -1105,7 +1105,7 @@
         "id": 196,
         "linearizedBaseContracts": [
           196,
-          1989
+          3144
         ],
         "name": "Pausable",
         "nameLocation": "605:8:1",
@@ -1743,7 +1743,7 @@
                           "name": "_msgSender",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1979,
+                          "referencedDeclaration": 3134,
                           "src": "1958:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -1914,7 +1914,7 @@
                           "name": "_msgSender",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1979,
+                          "referencedDeclaration": 3134,
                           "src": "2207:10:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
@@ -2035,7 +2035,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.6",
-  "updatedAt": "2022-04-23T10:38:36.063Z",
+  "updatedAt": "2022-04-25T19:57:23.615Z",
   "devdoc": {
     "details": "Contract module which allows children to implement an emergency stop mechanism that can be triggered by an authorized account. This module is used through inheritance. It will make available the modifiers `whenNotPaused` and `whenPaused`, which can be applied to the functions of your contract. Note that they will not be pausable by simply including this module, only once the modifiers are put in place.",
     "events": {
